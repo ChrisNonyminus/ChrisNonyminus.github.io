@@ -318,10 +318,10 @@ Module['FS_createPath']("/assets", "textures", true, true);
           var files = metadata['files'];
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
-          }          Module['removeRunDependency']('MetalNes.data');
+          }          Module['removeRunDependency']('datafile_MetalNes.data');
 
       };
-      Module['addRunDependency']('MetalNes.data');
+      Module['addRunDependency']('datafile_MetalNes.data');
 
       if (!Module.preloadResults) Module.preloadResults = {};
 
